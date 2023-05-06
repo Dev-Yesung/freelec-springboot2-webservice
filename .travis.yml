@@ -32,6 +32,9 @@ deploy:
     # before_deploy에서 생성한 디렉토리
     local_dir: deploy
     wait-until-deployed: true
+    # master브랜치 말고 다른 브랜치에도 권한 허용
+    on:
+      all_branches: true
 
 # CI 실행 완료시 메일로 알람
 notifications:
