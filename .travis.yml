@@ -21,7 +21,7 @@ before_deploy:
 
 deploy:
   - provider: s3
-    # Travis repo settings에 설정된 값
+    # Travis repo settings 에 설정된 값
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: yosong-freelec-springboot-build
@@ -44,6 +44,7 @@ deploy:
     # S3 버킷
     bucket: yosong-freelec-springboot-build
     # 빌드 파일을 압축해서 전달
+    key: freelec-springboot2-webservice.zip
     bundle_type: zip
     # 웹 콘솔에서 등록한 CodeDeploy 애플리케이션
     application: freelec-springboot2-webservice
