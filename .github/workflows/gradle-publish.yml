@@ -7,8 +7,8 @@
 
 
 env: # (11)
-  S3_BUCKET_NAME: ward-build
-  PROJECT_NAME: aws-web-service
+  S3_BUCKET_NAME: yosong-freelec-springboot-build
+  PROJECT_NAME: freelec-springboot2-webservice
 
 name: freelec-springboot-webservice-deploy # (0) Github Actions에서 보여질 이름을 지정
 
